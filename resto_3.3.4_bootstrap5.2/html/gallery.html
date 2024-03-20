@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--swiper-->
+    <link rel="stylesheet" href="assets/vendor/css/glightbox.min.css">
+    @@include('./partials/core-head.html')
+    <title>Resto</title>
+  </head>
+  <body>
+    @@include('./partials/preloader.html')
+
+    @@include('./partials/header-sticky.html',{"page": "pages"})
+
+
+    
+        <!--Page-header-->
+        <section class="position-relative overflow-hidden text-white">
+            <div class="position-absolute start-0 top-0 w-100 h-100 bg-dark jarallax ms-xl-n7" data-speed=".3">
+                <img src="assets/img/1920x1000/2.jpg" alt="" class="jarallax-img opacity-25">
+            </div>
+
+            <div class="container pt-8 pb-6 position-relative z-index-1">
+                <div class="row pt-4 pt-lg-6">
+                    <div class="col-10 col-lg-7 mx-auto text-center">
+                        <h1 class="display-2 mb-0">Gallery</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--Main content-start-->
+        <main id="main">
+            <div class="container py-7 py-lg-10">
+                <nav class="nav nav-pill filter-nav mb-5 d-flex justify-content-center">
+                    <button type="button" data-filter="*" data-bs-target=".isotope-grid" data-bs-toggle="pill" class="btn btn-outline-secondary active rounded-pill btn-sm is-checked me-2">All</button>
+                    <button type="button" data-filter=".g_2021" data-bs-target=".isotope-grid" data-bs-toggle="pill" class="btn btn-outline-secondary rounded-pill btn-sm me-2">2021</button>
+                    <button type="button" data-filter=".g_2022" data-bs-target=".isotope-grid" data-bs-toggle="pill" class="btn btn-outline-secondary rounded-pill btn-sm">2022</button>
+                </nav>
+                <div class="row g-2 isotope-grid" data-isotope>
+                    <div class="col-md-4 col-sm-6 grid-item g_2022">
+                        <a href="assets/img/800x600/1.jpg" data-title="Lorem ipsum 2022" data-gallery="gallery"
+                            class="glightbox hover-shadow hover-lift d-block">
+                            <img src="assets/img/800x600/1.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 grid-item g_2021">
+                        <a href="assets/img/800x600/3.jpg" data-title="Lorem ipsum 2021" data-gallery="gallery"
+                            class="glightbox hover-shadow hover-lift d-block">
+                            <img src="assets/img/800x600/3.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 grid-item g_2022">
+                        <a href="assets/img/800x600/5.jpg" data-title="Lorem ipsum 2022" data-gallery="gallery"
+                            class="glightbox hover-shadow hover-lift d-block">
+                            <img src="assets/img/800x600/5.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 grid-item g_2021">
+                        <a href="assets/img/800x600/4.jpg" data-title="Lorem ipsum 2021" data-gallery="gallery"
+                            class="glightbox hover-shadow hover-lift d-block">
+                            <img src="assets/img/800x600/4.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 grid-item g_2022">
+                        <a href="assets/img/800x600/6.jpg" data-title="Lorem ipsum 2022" data-gallery="gallery"
+                            class="glightbox hover-shadow hover-lift d-block">
+                            <img src="assets/img/800x600/6.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 grid-item g_2021">
+                        <a href="assets/img/800x600/2.jpg" data-title="Lorem ipsum 2021" data-gallery="gallery"
+                            class="glightbox hover-shadow hover-lift d-block">
+                            <img src="assets/img/800x600/2.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <p class="text-center mb-0 pt-8">
+                    <a href="#!" class="h6 mb-0 text-secondary d-inline-flex align-items-center">Follow us on
+                        <svg class="ms-2" viewBox="0 0 512 512" width="1.5rem" height="1.5rem" fill="currentColor">
+                            <path
+                                d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z">
+                            </path>
+                            <path
+                                d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z">
+                            </path>
+                        </svg>
+                    </a>
+                </p>
+            </div>
+        </main>
+        <!--/.End main-content-->
+
+<!--Footer-->
+<svg preserveAspectRatio="none" width="100%" height="100" viewBox="0 0 1200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="text-primary">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 200L422.667 100L845.333 0L1268 125V200H845.333H422.667H0Z" fill="currentColor"/>
+</g>
+<g class="text-dark">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 200L450.667 108L901.333 16L1352 131V200H901.333H450.667H0Z" fill="currentColor"/>
+  </g>
+</svg>
+@@include('./partials/footer-default.html')
+
+    @@include('./partials/core-scripts.html')
+
+    <!--Glightbox-->
+    <script src="assets/vendor/glightbox.min.js"></script>
+    <script>
+       const lightbox = GLightbox({
+        selector:'.glightbox'
+       });
+    </script>
+
+<!--Gallery-filter-->
+<script src="assets/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope.pkgd.min.js"></script>
+<script>
+    'use strict';
+var grid = document.querySelector('.isotope-grid');
+var iso;
+if (grid) {
+imagesLoaded( grid, function() {
+    // init Isotope after all images have loaded
+    iso = new Isotope( grid, {
+      itemSelector: '.grid-item',
+    });
+  });
+
+  // bind filter button click
+  var filtersElem = document.querySelector('.filter-nav');
+  filtersElem.addEventListener( 'click', function( event ) {
+    // only work with buttons
+    if ( !matchesSelector( event.target, 'button' ) ) {
+      return;
+    }
+    var filterValue = event.target.getAttribute('data-filter');
+    // use matching filter function
+    filterValue = [ filterValue ] || filterValue;
+    iso.arrange({ filter: filterValue });
+  });
+  
+  // change is-checked class on buttons
+  var buttonGroups = document.querySelector('.filter-nav');
+  for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
+    var buttonGroup = buttonGroups[i];
+    radioButtonGroup( buttonGroup );
+  }
+  
+  function radioButtonGroup( buttonGroup ) {
+    buttonGroup.addEventListener( 'click', function( event ) {
+      // only work with buttons
+      if ( !matchesSelector( event.target, 'button' ) ) {
+        return;
+      }
+      buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
+      event.target.classList.add('is-checked');
+    });
+  }
+}
+
+</script>
+</body>
+</html>

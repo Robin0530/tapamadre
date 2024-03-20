@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--Leaflet Map Css-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin="">
+    <!--swiper-->
+    <link rel="stylesheet" href="assets/vendor/css/glightbox.min.css">
+    @@include('./partials/core-head.html')
+    <title>Resto</title>
+  </head>
+  <body>
+    @@include('./partials/preloader.html')
+
+    @@include('./partials/header-sticky.html',{"page": "pages"})
+
+    
+        <!--Page-header-->
+        <section class="position-relative overflow-hidden text-white">
+            <div class="position-absolute start-0 top-0 w-100 h-100 bg-dark jarallax" data-speed=".3">
+                <img src="assets/img/1920x1000/2.jpg" alt="" class="jarallax-img opacity-25">
+            </div>
+
+            <div class="container pt-8 pb-6 position-relative z-index-1">
+                <div class="row pt-4 pt-lg-6 pb-8">
+                    <div class="col-10 col-lg-7 mx-auto text-center">
+                        <h1 class="display-2 mb-0">Contact Us</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!--Main content-->
+       <main id="main">
+        <section class="position-relative">
+            <div class="container pb-7 pb-lg-10">
+                <div class="row">
+                    <div class="col-12 mb-6">
+                        <div class="embed-responsive embed-responsive-21by9 position-relative mt-n8">
+                            <div class="embed-responsive-item" id="map" style="height: 300px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-5 mb-md-0">
+                        <div class="mb-4 pb-4 border-bottom border-light" data-aos="fade-up" data-aos-delay="50">
+                            <h5 class="mb-3">Opening hours</h5>
+                            <p class="mb-2">Tuesday - <small class="text-dark">10am - 5pm</small></p>
+                            <p class="mb-2 border-top border-bottom border-light py-2 mb-0">Sunday - <small class="text-dark">5pm - 11pm</small></p>
+                            <p class="mb-0">Monday - <small class="text-dark">Close</small></p>
+                        </div>
+                        <div class="mb-4 border-bottom border-light pb-4" data-aos="fade-up" data-aos-delay="100">
+                            <h5 class="mb-3">Mail us</h5>
+                            <p class="lead mb-0">
+                               <a href="mailto:yourmail@domain.com" class="text-secondary">yourmail@domain.com</a>
+                            </p>
+                        </div>
+                        <div class="mb-0" data-aos="fade-up" data-aos-delay="150">
+                            <h5 class="mb-3">Call us</h5>
+                            <p class="lead text-dark mb-0">
+                                <a href="#" class="text-secondary">+01 123-456-4590</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mx-auto">
+                        <div class="">
+                            <form>
+                                <div class="mb-3">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-12 mb-2 mb-sm-0">
+                                            <div class="mb-2">
+                                                <label class="mb-2">Your Email</label>
+                                                <input type="email" id="contactMail" class="form-control"
+                                                    placeholder="Your Email" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-12">
+                                            <div class="mb-2">
+                                                <label class="mb-2">Phone Number</label>
+                                                <input type="text" id="contactPhone" class="form-control"
+                                                    placeholder="Your Phone" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="mb-2">Message</label>
+                                    <textarea rows="6" id="contactMsg" class="form-control"
+                                        placeholder="Enter your Message" required=""></textarea>
+                                </div>
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-lg btn-outline-primary btn-hover-scale"><span>Send Message</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<!--Footer-->
+<svg preserveAspectRatio="none" width="100%" height="100" viewBox="0 0 1200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="text-primary">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 200L422.667 100L845.333 0L1268 125V200H845.333H422.667H0Z" fill="currentColor"/>
+</g>
+<g class="text-dark">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 200L450.667 108L901.333 16L1352 131V200H901.333H450.667H0Z" fill="currentColor"/>
+  </g>
+</svg>
+@@include('./partials/footer-default.html')
+
+@@include('./partials/core-scripts.html')
+
+
+
+        <!--Leaflet Map-->
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
+        <script>
+
+            var map = L.map('map').setView([50.84673, 4.35247], 12);
+
+            L.tileLayer('https://tile.openstreetmap.be/osmbe/{z}/{x}/{y}.png', {
+                attribution:
+                    '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors' +
+                    ', Tiles courtesy of <a href="https://geo6.be/">GEO-6</a>',
+                maxZoom: 13
+            }).addTo(map);
+
+            var marker = L.marker([50.84673, 4.35247]).addTo(map);
+
+            var popup = marker.bindPopup('<h5 class="mb-0">Resto</h5><p class="mt-1 mb-0">Food & Drink.</p>');
+
+            popup.openPopup();
+
+        </script>
+</body>
+</html>

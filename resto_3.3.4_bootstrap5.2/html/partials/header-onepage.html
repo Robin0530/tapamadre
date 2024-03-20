@@ -1,0 +1,165 @@
+<nav
+class="navbar navbar-expand-lg navbar-light navbar-transparent navbar-sticky navbar-link-white">
+<div class="container">
+    <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo/logo-light.svg" alt="Logo" class="img-fluid logo-default">
+        <img src="assets/img/logo/logo-dark.svg" alt="Logo" class="img-fluid logo-pinned">
+    </a>
+    <div class="d-flex align-items-center order-lg-2 navbar-icons">
+        <button class="navbar-toggler order-last ms-3 ms-lg-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#restoMainNavbar" aria-controls="restoMainNavbar">
+            <span class="navbar-toggler-line"></span>
+            <span class="navbar-toggler-line-end"></span>
+        </button>
+        <div class="navbar-nav flex-row">
+            <div class="nav-item">
+                <a class="nav-icon-link nav-link" href="login-register.html"><span>SignIn</span></a>
+            </div>
+            <div class="nav-item ms-3 ms-lg-0">
+                <a href="#offcanvasCart" class="nav-icon-link nav-link" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasCart">
+                    <div class="d-flex align-items-center">
+                        <span>Bag</span>
+                        <span class="cart-badge">(2)</span>
+                    </div>
+                </a>
+            </div>
+            <div class="position-lg-relative nav-item ms-3 ms-lg-0">
+                <a data-bs-toggle="dropdown" href="#dropdown-search" class="nav-link">
+                  <i class="bi bi-search"></i>
+                </a>
+                <div class="dropdown-menu position-absolute w-100 dropdown-menu-lg-end dropdown-search p-4"
+                    id="dropdown-search">
+                    <h5 class="mb-3">Tell us what you're looking for</h5>
+                    <form>
+                        <input type="text"
+                            class="form-control form-control-lg"
+                            placeholder="Example: Dinner, Wine, Pizza">
+                        <div class="d-grid pt-2">
+                            <button type="button" class="btn btn-primary">
+                                Search
+                            </button>
+                        </div>
+                    </form>
+                    <div class="pt-4">
+                        <h6 class="mb-3">Popular searches</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="dropdown-item small">Egg & spinach
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="dropdown-item small">Creamy soup
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="dropdown-item small">Crunch veg salad
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas-lg offcanvas-end" id="restoMainNavbar" tabindex="-1" aria-labelledby="restoMainNavbar"
+    aria-hidden="true">
+        <div class="offcanvas-body">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-scroll>Home </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-scroll>About </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link" data-scroll>Menu </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reservation" class="nav-link" data-scroll>Reservation </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#events" class="nav-link" data-scroll>News</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/.nav-collapse -->
+</div>
+
+</nav>
+
+<!--Shopping cart offcanvas-->
+ <!--Cart-modal-start-->
+ <div class="offcanvas offcanvas-end fade" id="offcanvasCart" tabindex="-1" aria-labelledby="offcanvasCart"
+ aria-hidden="true">
+ 
+         <!--Cart-header-->
+         <div
+             class="offcanvas-header">
+             <h5 class="mb-0">Your cart</h5>
+             <button class="btn-close z-index-1" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                 </button>
+         </div>
+
+
+         <!--cart-content-->
+         <div class="offcanvas-body">
+
+             <!--Item card-->
+             <div class="card px-1 py-3 card-body flex-row border-0">
+                 <div class="me-3">
+                     <img src="assets/img/menu/dessert1.jpg" alt="" class="width-70 rounded-3 shadow">
+                 </div>
+                 <div class="flex-grow-1">
+                     <h6 class="mb-0">Sweet dessert</h6>
+                     <span class="d-inline-flex align-items-center my-1">Qty: 1</span>
+                     <div>
+                         <span>$6.00</span>
+                     </div>
+                 </div>
+                 <div>
+                     <a href="#!" class="text-muted">
+                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x"
+                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                             <path fill-rule="evenodd"
+                                 d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                         </svg>
+                     </a>
+                 </div>
+             </div>
+             <!--Item card-->
+             <div class="card px-1 py-3 card-body flex-row border-0">
+                 <div class="me-3">
+                     <img src="assets/img/menu/dessert2.jpg" alt="" class="width-70 rounded-3 shadow">
+                 </div>
+                 <div class="flex-grow-1">
+                     <h6 class="mb-0">Strawberry cake</h6>
+                     <span class="d-inline-flex align-items-center my-1">Qty: 1</span>
+                     <div>
+                         <span>$7.50</span>
+                     </div>
+                 </div>
+                 <div>
+                     <a href="#!" class="text-muted">
+                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x"
+                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                             <path fill-rule="evenodd"
+                                 d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                         </svg>
+                     </a>
+                 </div>
+             </div>
+         </div>
+
+         <!--cart-footer-->
+         <div class="offcanvas-footer p-4 border-0 flex-column">
+             <div class="mb-3 d-flex justify-content-between w-100">
+                 <p class="mb-0 flex-grow-1">Subtotal </p>
+                 <h5 class="mb-0">$11.00</h5>
+             </div>
+             <div class="w-100">
+                 <a href="#" class="btn btn-primary w-100">continue to Checkout</a>
+             </div>
+         </div>
+</div>

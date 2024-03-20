@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--swiper-->
+    <link rel="stylesheet" href="assets/vendor/css/swiper-bundle.min.css">
+    @@include('./partials/core-head.html')
+    <title>Resto</title>
+  </head>
+    @@include('./partials/preloader.html')
+
+    @@include('./partials/header-light.html',{"page":"menu"})
+
+       <!--Page hero-->
+       <section class="position-relative overflow-hidden bg-light">
+        <div class="container pt-8 pb-6 text-center position-relative">
+            <div class="row pt-4 pt-lg-6 justify-content-center text-center">
+                <div class="col-lg-8 col-md-10">
+                    <h1 class="display-3 mb-3 mx-auto">
+                        Extended Grid</h1>
+                    <p class="lead mb-0">
+                        The best food in town at one of the best locations
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Main content-->
+    <main id="main">
+
+        <div class="container py-7 py-lg-10">
+            <nav class="nav text-center d-flex justify-content-center filter-nav mb-4">
+                <button class="is-checked btn-outline-secondary btn m-2 active border-width-2 rounded-pill"
+                    data-bs-toggle="pill" data-filter="*" data-bs-target=".isotope-grid">
+                    All
+                </button>
+                <button class="btn-outline-secondary btn m-2 border-width-2 rounded-pill" data-bs-toggle="pill"
+                    data-filter=".food" data-bs-target=".isotope-grid">
+                    Food
+                </button>
+                <button class=" btn-outline-secondary btn m-2 border-width-2 rounded-pill" data-bs-toggle="pill"
+                    data-filter=".drink" data-bs-target=".isotope-grid">
+                    Drink
+                </button>
+            </nav>
+
+            <!-- Items -->
+            <div class="row g-2 isotope-grid" data-isotope='{"layoutMode": "masonry"}'>
+                <div class="col-sm-6 col-lg-4 food grid-item">
+                    <div class="card-overlay position-relative overflow-hidden">
+                        <img class="img-fluid" src="assets/img/600x800/3.jpg" alt="..">
+                        <div class="card-overlay-box overlay-linear position-absolute start-0 top-0 w-100 h-100">
+                            <div
+                                class="card-overlay-box-content text-white position-relative d-flex h-100 justify-content-end flex-column p-4">
+                                <span class="mb-1 h5">Food & Drink</span>
+                                <span class="small">$6.5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End menu card-col-->
+                <div class="col-sm-6 col-lg-4 drink grid-item">
+                    <div class="card-overlay position-relative overflow-hidden">
+                        <img class="img-fluid" src="assets/img/600x800/4.jpg" alt="..">
+                        <div class="card-overlay-box overlay-linear position-absolute start-0 top-0 w-100 h-100">
+                            <div
+                                class="card-overlay-box-content text-white position-relative d-flex h-100 justify-content-end flex-column p-4">
+                                <span class="mb-1 h5">Food & Drink</span>
+                                <span class="small">$4.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End menu card-col-->
+                <div class="col-sm-6 col-lg-4 drink grid-item">
+                    <div class="card-overlay position-relative overflow-hidden">
+                        <img class="img-fluid" src="assets/img/800x600/1.jpg" alt="..">
+                        <div class="card-overlay-box overlay-linear position-absolute start-0 top-0 w-100 h-100">
+                            <div
+                                class="card-overlay-box-content text-white position-relative d-flex h-100 justify-content-end flex-column p-4">
+                                <span class="mb-1 h5">Food & Drink</span>
+                                <span class="small">Starting $1.5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End menu card-col-->
+
+                <div class="col-sm-6 col-lg-4 food grid-item">
+                    <div class="card-overlay position-relative overflow-hidden">
+                        <img class="img-fluid" src="assets/img/800x600/5.jpg" alt="..">
+                        <div class="card-overlay-box overlay-linear position-absolute start-0 top-0 w-100 h-100">
+                            <div
+                                class="card-overlay-box-content text-white position-relative d-flex h-100 justify-content-end flex-column p-4">
+                                <span class="mb-1 h5">Food & Drink</span>
+                                <span class="small">Glass $6.9 / Bottle $29</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End menu card-col-->
+                <div class="col-sm-6 col-lg-4 food grid-item">
+                    <div class="card-overlay position-relative overflow-hidden">
+                        <img class="img-fluid" src="assets/img/1140x480/2.jpg" alt="..">
+                        <div class="card-overlay-box overlay-linear position-absolute start-0 top-0 w-100 h-100">
+                            <div
+                                class="card-overlay-box-content text-white position-relative d-flex h-100 justify-content-end flex-column p-4">
+                                <span class="mb-1 h5">Food & Drink</span>
+                                <span class="small">Glass $6.9 / Bottle $29</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End menu card-col-->
+                <div class="col-sm-6 col-lg-4 food grid-item">
+                    <div class="card-overlay position-relative overflow-hidden">
+                        <img class="img-fluid" src="assets/img/800x600/3.jpg" alt="..">
+                        <div class="card-overlay-box overlay-linear position-absolute start-0 top-0 w-100 h-100">
+                            <div
+                                class="card-overlay-box-content text-white position-relative d-flex h-100 justify-content-end flex-column p-4">
+                                <span class="mb-1 h5">Food & Drink</span>
+                                <span class="small">$8.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End menu card-col-->
+                <div class="col-sm-6 col-lg-4 drink grid-item">
+                    <div class="card-overlay position-relative overflow-hidden">
+                        <img class="img-fluid" src="assets/img/800x600/4.jpg" alt="..">
+                        <div class="card-overlay-box overlay-linear position-absolute start-0 top-0 w-100 h-100">
+                            <div
+                                class="card-overlay-box-content text-white position-relative d-flex h-100 justify-content-end flex-column p-4">
+                                <span class="mb-1 h5">Food & Drink</span>
+                                <span class="small">$12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End menu card-col-->
+            </div>
+        </div>
+        <section class="position-relative border-top">
+            <div class="container pt-8 pb-9 pt-lg-9 position-relative z-index-1">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-xl-5 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="50">
+                        <h1 class="display-4 mb-3">How may we Serve you?</h1>
+                        <p class="pe-md-5 pe-lg-8 mb-0 text-muted">
+                            Feel free to request reservation for one table or entire space for a large party or
+                            event
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <div class="row row-cols-md-2 mb-3">
+                            <div class="col mb-3" data-aos="fade-up" data-aos-delay="50">
+                                <h5 class="mb-3">Phone</h5>
+                                <p class="lead"><a href="tel:+011234567890">(01) 123 456 7890</a></p>
+                            </div>
+                            <div class="col mb-3" data-aos="fade-up" data-aos-delay="100">
+                                <h5 class="mb-3">Email</h5>
+                                <p class="lead">
+                                    <a href="mailto:yourmail@domain.com"><span>yourmail@domain.com</span></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row row-cols-md-2">
+                            <div class="col" data-aos="fade-up" data-aos-delay="150">
+                                <h5 class="mb-3">Opening Hours</h5>
+                                <p class="mb-21">Tuesday - <small>10am - 5pm</small></p>
+                                <p class="mb-2 border-top border-bottom py-2 mb-0">Sunday - <small>5pm - 11pm</small></p>
+                                <p class="mb-0">Monday - <small>Close</small></p>
+                            </div>
+                            <div class="col" data-aos="fade-up" data-aos-delay="200">
+                                <h5 class="mb-3">Reach us</h5>
+                                <p class="mb-0">
+                                    124, Lorem Street, NY
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+@@include('./partials/footer-2.html')
+@@include('./partials/core-scripts.html')
+<script src="assets/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope.pkgd.min.js"></script>
+<script>
+    'use strict';
+var grid = document.querySelector('.isotope-grid');
+var iso;
+if (grid) {
+imagesLoaded( grid, function() {
+    // init Isotope after all images have loaded
+    iso = new Isotope( grid, {
+      itemSelector: '.grid-item',
+    });
+  });
+
+  // bind filter button click
+  var filtersElem = document.querySelector('.filter-nav');
+  filtersElem.addEventListener( 'click', function( event ) {
+    // only work with buttons
+    if ( !matchesSelector( event.target, 'button' ) ) {
+      return;
+    }
+    var filterValue = event.target.getAttribute('data-filter');
+    // use matching filter function
+    filterValue = [ filterValue ] || filterValue;
+    iso.arrange({ filter: filterValue });
+  });
+  
+  // change is-checked class on buttons
+  var buttonGroups = document.querySelector('.filter-nav');
+  for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
+    var buttonGroup = buttonGroups[i];
+    radioButtonGroup( buttonGroup );
+  }
+  
+  function radioButtonGroup( buttonGroup ) {
+    buttonGroup.addEventListener( 'click', function( event ) {
+      // only work with buttons
+      if ( !matchesSelector( event.target, 'button' ) ) {
+        return;
+      }
+      buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
+      event.target.classList.add('is-checked');
+    });
+  }
+}
+
+</script>
+  </body>
+</html>
